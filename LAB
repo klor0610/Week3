@@ -1,0 +1,15 @@
+#Week3 Lab
+#!/bin/bash
+#Simple script to find /disk through cmd line
+
+#list contents of directory and pipe to more, search for /disk
+
+ls /dev | more
+
+#change directory
+
+cd /dev/disk
+
+#explore disks. should show all disks and external drives (usb/cd)
+
+ls-F /dev/disk/by-id
